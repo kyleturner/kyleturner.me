@@ -1839,5 +1839,12 @@ input:focus{
     outline: none;
 }
 
+.link-resume {
+    color:white;
+}
+.link-resume:hover {
+    color: #2D2D2D;
+}
+
 /*End media queries*/
 /*-------------------------------------------------------------------------*/
