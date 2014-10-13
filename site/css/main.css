@@ -19,10 +19,6 @@ iframe {
 }
 
 
-
-
-
-
 /*html5 display rule*/
 address, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section, summary {
 	display: block;
@@ -567,17 +563,24 @@ nav#mainNav  .active{
 }
 
 .ico a:hover{
-	background:#6AC8C8;
+	background:#93C054;
 }
 .ico a.fb:hover{
 	background:#3B5998;
 }
 
 .ico a.tw:hover{
-	background:#33BCEF;
+	background:#59ADEB;
+}
+
+.ico a.instagram:hover{
+	background:#FFCC48;
 }
 
 
+.ico a.linkedin:hover{
+	background:#2286BA;
+}
 
 
 .skills {
@@ -1310,12 +1313,11 @@ ul#category li a:hover{
     height: 45px;
 	color:#666666;
 	padding-left:10px;
-	font-size:13px;
+	font-size:17px;
 }
 
 
 .contactForm [type="text"] {
-
     width: 280px;
 }
 
@@ -1827,6 +1829,15 @@ ul#category li a:hover{
 	
 }
 
+textarea:focus {
+    background-color: #6EC8C7;
+    outline: none;
+}
+
+input:focus{
+    background-color: #6EC8C7;
+    outline: none;
+}
 
 /*End media queries*/
 /*-------------------------------------------------------------------------*/
