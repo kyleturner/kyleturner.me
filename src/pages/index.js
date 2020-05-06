@@ -23,8 +23,9 @@ const IndexPage = ({
         <meta name="description" content={site.siteMetadata.description} />
         {!site.siteMetadata.w3l_dom_key ? null : <meta name="w3l-domain-verification" content={site.siteMetadata.w3l_dom_key} />}
       </Helmet>
-      <HeroHeader/>
-      <h2>Blog Posts &darr;</h2>
+      <HeroHeader />
+      <h2><span role="img" aria-label="high-voltage">⚡</span> Projects</h2>
+      <p>Delivering pixel-perfect quality in design and development.</p>
       <div className="grids">
         {Posts}
       </div>

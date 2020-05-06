@@ -12,8 +12,8 @@ module.exports = {
     // change this to you website url
     siteUrl: `https://kyleturner.netlify.app`,
     home: {
-      title: `Hey! I'm Kyle`,
-      description: `Software Engineer | Mobile App Developer | API Architect | Designer | Startup Founder | Serial Entreprenuer`,
+      title: `Hey! I'm Kyle.`,
+      description: `Software & Mobile App Engineer • Platform Architect • UX/UI Designer`,
     },
     /* W3Layouts domain verification key for contact forms https://my.w3layouts.com/Forms/ */
     w3l_dom_key: `5e609f7a2d23fCF_Domain_verify`
@@ -59,7 +59,7 @@ module.exports = {
         short_name: `kyleturner`,
         start_url: `/`,
         background_color: `#fff`,
-        theme_color: `#381696`,
+        theme_color: `#0696F9`,
         display: `standalone`,
         icon: "src/images/icon.png",
       },

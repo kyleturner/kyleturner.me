@@ -2,17 +2,11 @@
   <img src="https://img.shields.io/twitter/follow/w3layouts.svg?label=Follow%20@w3layouts" alt="Follow @w3layouts" />
 </a>
 
-# Delog - Blog for Developer and Designer
-This simple website built with GatsbyJS and Netlify CMS. Deploys on netlify with single click. This Starter is sponsered by [W3Layouts](https://w3layouts.com).
+# kyleturner.me
 
-[![Delog - Gatsby Starter Demo](https://w3layouts.com/wp-content/uploads/2020/03/delog.jpg)](https://delog-w3layouts.netlify.com/)
+This simple website built with GatsbyJS and Netlify CMS. Deploys on netlify.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/W3Layouts/gatsby-starter-delog)
-
-Install this starter locally:
->`gatsby new gatsby-starter-delog https://github.com/W3Layouts/gatsby-starter-delog`
-
-Instructions also available at W3Layouts [Delog Launch Article](https://w3layouts.com/articles/delog-gatsby-starter-netlify-cms/).
+Instructions available at W3Layouts [Delog Launch Article](https://w3layouts.com/articles/delog-gatsby-starter-netlify-cms/).
 
 ## Features
 - Built with GatsbyJS and Netlify CMS
@@ -61,41 +55,12 @@ Goto `gatsby-config.js`. Here you can edit following details
   * Follow the steps [W3Layouts Contact form](https://w3layouts.com/articles/introducing-contact-forms-for-static-websites/) instructions and grab domain verification key (for example: xxxxxxxxxxxxxxx_Domain_verify) then past it as value for [w3l_dom_key](https://github.com/W3Layouts/gatsby-starter-delog/blob/109b93b42385238da52cf46e8e80d8a77730e42d/gatsby-config.js#L18) in `gatsby-config.js` file in your project.
 * and google analytics tracking id
 
-I hope you build a great website with Delog. If you like it please spread the word, Feel free to contribute and raise a pull request :)
-
-For issues,feedback on enhancement or sharing your new awesome website built with delog. [Create New Issue](https://github.com/W3Layouts/delog/issues/new) Here
-
-### Upcoming Features Roadmap
-- [ ] Pagination for Blog
-- [ ] Social Icons
-- [x] Dark Mode
-
 ---
 
 ## Changelog
 All notable changes to this project are listed here.
 
-### [1.4.0] - 2020-05-01
+### [2.0.0] - 2020-05-01
+
 #### Added
-- `gatsby-plugin-sitemap` Creates a sitemap for your Gatsby site in production.
-
-#### Changed
-- Changelog improvements
-- Comments on `gatsby-config.js`
-- Comments on `static/admin/config.yml`
-
-### [1.3.0] - 2020-04-30
-#### Added
-- `gatsby-plugin-offline` drop-in support for making a GatsbyJS site work offline and more resistant to bad network connections.
-- `gatsby-plugin-manifest` configures GatsbyJS to create a manifest.webmanifest file on every site build
-
-### [1.2.0] - 2020-04-28
-#### Added 
-- GatsbyJS Increment builds with Netlify deployment
-
-### [1.1.0] - 2020-04-21
-#### Added 
-- Dark mode compatibitly and toggle for user preference
-
-### [1.0.0] - 2020-03-14
-- Launch of GatsbyJS and Netlify CMS based starter `gatsby-starter-delog`
+- React, Gatsby and Netlify website rebuild.
