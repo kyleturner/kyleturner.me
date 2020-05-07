@@ -3,7 +3,7 @@ import React from "react"
 import { Global } from "@emotion/core"
 import { jsx } from "theme-ui"
 import SEO from "./seo"
-// import "./layout.scss"
+import "./layout.scss"
 
 type LayoutProps = { children?: React.ReactNode; className?: string }
 
