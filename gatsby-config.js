@@ -1,75 +1,66 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
+require(`dotenv`).config({
+  path: `.env`,
+})
 
 module.exports = {
-  /* Your site config here */
   siteMetadata: {
-    title: `Kyle Turner`,
-    description: `Software Engineer | Mobile App Developer | API Architect | Designer | Startup Founder | Serial Entreprenuer`,
-    // change this to you website url
+    // Used for the title template on pages other than the index site
+    siteTitle: `Kyle Turner`,
+    // See all options: https://github.com/LekoArts/gatsby-themes/blob/master/themes/gatsby-theme-cara/gatsby-config.js
+    siteTitleAlt: `Kyle Turner`,
+    // Can be used for e.g. JSONLD
+    siteHeadline: `Kyle Turner - Software Engineer & UX/UI Designer`,
+    // Will be used to generate absolute URLs for og:image etc.
     siteUrl: `https://kyleturner.netlify.app`,
-    home: {
-      title: `Hey! I'm Kyle.`,
-      description: `Software & Mobile App Engineer • Platform Architect • UX/UI Designer`,
-    },
-    /* W3Layouts domain verification key for contact forms https://my.w3layouts.com/Forms/ */
-    w3l_dom_key: `5e609f7a2d23fCF_Domain_verify`
+    // Used for SEO
+    siteDescription: `Software Engineer | Mobile App Developer | API Architect | Designer | Startup Founder | Serial Entreprenuer`,
+    // Will be set on the <html /> tag
+    siteLanguage: `en`,
+    // Used for og:image and must be placed inside the `static` folder
+    siteImage: `/banner.jpg`,
+    // Twitter Handle
+    author: `@kylerturner`,
   },
   plugins: [
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `@lekoarts/gatsby-theme-cara`,
+      // See the theme's README for all available options
       options: {
-        name: `markdown-pages`,
-        path: `${__dirname}/_data`,
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [{
-          resolve: `gatsby-remark-prismjs`,
-          options: {
-            classPrefix: "language-",
-            inlineCodeMarker: null,
-            aliases: {},
-            showLineNumbers: false,
-            noInlineHighlight: false,
-          },
-        },
-        {
-          resolve: 'gatsby-remark-emojis',
-        }],
+        basePath: '/',
       },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // The property ID; the tracking code won't be generated without it. replace with yours
-        trackingId: "UA-164743872-1",
-        head: true,
-      }
+        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Kyle Turner`,
-        short_name: `kyleturner`,
+        name: `Cara - @lekoarts/gatsby-theme-cara`,
+        short_name: `Cara`,
+        description: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
         start_url: `/`,
-        background_color: `#fff`,
-        theme_color: `#0696F9`,
+        background_color: `#141821`,
+        theme_color: `#f6ad55`,
         display: `standalone`,
-        icon: "src/images/icon.png",
+        icons: [
+          {
+            src: `/android-chrome-192x192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
+          },
+          {
+            src: `/android-chrome-512x512.png`,
+            sizes: `512x512`,
+            type: `image/png`,
+          },
+        ],
       },
     },
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-netlify-cms`,
-    'gatsby-plugin-dark-mode',
-    // siteURL is a must for sitemap generation
-    `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
+    `gatsby-plugin-netlify`,
+    'gatsby-plugin-dark-mode',
   ],
 }
