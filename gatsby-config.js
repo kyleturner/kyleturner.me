@@ -62,5 +62,6 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
     'gatsby-plugin-dark-mode',
+    `gatsby-plugin-scroll-reveal`,
   ],
 }
