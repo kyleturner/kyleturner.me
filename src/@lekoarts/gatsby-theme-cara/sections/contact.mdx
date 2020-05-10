@@ -19,9 +19,9 @@ Have a project I can help with? Please drop me a line, I'd love to hear from you
 <!-- Netlify Form -->
 <form
   name="contact"
-  method="post"
+  method="POST"
   data-netlify="true"
-  data-netlify-honeypot="bot-field"
+  netlify-honeypot="bot-field"
 >
   <input type="hidden" name="bot-field" />
   <input type="hidden" name="form-name" value="contact" />
@@ -43,16 +43,16 @@ Have a project I can help with? Please drop me a line, I'd love to hear from you
   <Text sx={{fontSize: 1, fontWeight: 'bold'}}>What do you need help with?</Text>
   <Box  mb={3}>
     <Label>
-      <Checkbox name='service-app'/>Branding & UX/UI Design
+      <Checkbox name='service-uxui' />Branding & UX/UI Design
     </Label>
     <Label>
-      <Checkbox name='service-app'/>Web Design & Development
+      <Checkbox name='service-web' />Web Design & Development
     </Label>
     <Label>
-      <Checkbox name='service-app'/>App Design & Development
+      <Checkbox name='service-app' />App Design & Development
     </Label>
     <Label>
-      <Checkbox name='service-app'/>Software Integration Consulting
+      <Checkbox name='service-consulting' />Software Integration Consulting
     </Label>
   </Box>
   
@@ -61,5 +61,5 @@ Have a project I can help with? Please drop me a line, I'd love to hear from you
   <Textarea name="message" required mb={3}/>
   
   {/* Submit */}
-  <Button mr={2}>Send</Button>
+  <Button type='submit' mr={2}>Send</Button>
 </form>
