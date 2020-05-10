@@ -36,7 +36,6 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
       <Divider speed={0.2} offset={offset} factor={factor}>
         <UpDown>
           <SVG icon="iphone2" width={48} color="icon_blue" left="44%" top="8%" />
-          {/* <SVG icon="apple" width={48} color="icon_darkest" left="15%" top="60%" /> */}
           <SVG icon="box" width={6} color="icon_darker" left="60%" top="2%" />
         </UpDown>
         <UpDownWide>
@@ -47,6 +46,7 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
           <SVG icon="cross" width={16} stroke color="icon_purple" left="22%" top="14%" />
           <SVG icon="circle" width={6} color="icon_darkest" left="75%" top="0%" />
           <SVG icon="hexa" hiddenMobile width={8} stroke color="icon_orange" left="40%" top="10%" />
+          {/* <SVG icon="devices" width={32} color="icon_darkest" left="75%" top="10%" /> */}
         </UpDownWide>
         <SVG icon="circle" hiddenMobile width={24} color="icon_darker" left="5%" top="70%" />
         <SVG icon="circle" width={6} color="icon_darkest" left="4%" top="20%" />
@@ -55,7 +55,7 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
         <SVG icon="apple" hiddenMobile width={24} color="icon_darker" left="60%" top="70%" />
         <SVG icon="triangle" width={8} stroke color="icon_darker" left="25%" top="3%" />
         <SVG icon="circle" width={64} color="icon_blue" left="95%" top="5%" />
-        <SVG icon="box" hiddenMobile width={64} color="icon_purple" left="5%" top="90%" />
+        <SVG icon="box" width={32} color="icon_purple" left="15%" top="90%" />
         <SVG icon="box" width={6} color="icon_darkest" left="10%" top="10%" />
         <SVG icon="box" hiddenMobile width={12} color="icon_darkest" left="40%" top="20%" />
         <SVG icon="hexa" hiddenMobile width={16} stroke color="icon_darker" left="65%" top="35%" />

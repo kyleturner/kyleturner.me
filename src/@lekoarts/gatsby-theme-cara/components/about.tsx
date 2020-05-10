@@ -20,9 +20,9 @@ const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
     <Divider speed={0.1} offset={offset} factor={factor}>
       <UpDown>
         <SVG icon="box" hiddenMobile width={6} color="icon_blue" left="50%" top="75%" />
-        <SVG icon="swift" hiddenMobile width={48} color="icon_darkest" left="70%" top="20%" />
+        <SVG icon="swift" hiddenMobile width={48} color="icon_orange" left="70%" top="20%" />
         <SVG icon="triangle" width={8} stroke color="icon_darkest" left="25%" top="5%" />
-        <SVG icon="upDown" hiddenMobile width={24} color="icon_orange" left="80%" top="80%" />
+        <SVG icon="upDown" hiddenMobile width={24} color="icon_blue" left="80%" top="80%" />
       </UpDown>
       <UpDownWide>
         <SVG icon="arrowUp" hiddenMobile width={16} color="icon_purple" left="5%" top="80%" />
