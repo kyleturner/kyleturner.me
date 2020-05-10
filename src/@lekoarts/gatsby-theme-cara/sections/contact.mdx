@@ -16,12 +16,22 @@ import {
 
 Have a project I can help with? Please drop me a line, I'd love to hear from you!
 
+<!-- A little help for the Netlify bots if you're not using a SSG -->
+<form name="contact" netlify netlify-honeypot="bot-field" hidden>
+  <input type="text" name="name" />
+  <input type="text" name="phone" />
+  <input type="email" name="email" />
+  <input name='service-uxui' />
+  <input name='service-web' />
+  <input name='service-app' />
+  <input name='service-consulting' />
+  <textarea name="message"></textarea>
+</form>
+
 <!-- Netlify Form -->
 <form
   name="contact"
   method="post"
-  data-netlify-honeypot="bot-field"
-  data-netlify="true"
 >
   {/* Name */}
   <Label htmlFor='name'>Name</Label>
