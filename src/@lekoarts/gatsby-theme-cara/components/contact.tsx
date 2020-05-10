@@ -9,6 +9,18 @@ import { UpDown, UpDownWide, waveAnimation } from "../styles/animations"
 import Footer from "./footer"
 // @ts-ignore
 import ContactMDX from "../sections/contact"
+import {
+  Box,
+  Button,
+  Label,
+  Input,
+  Select,
+  Textarea,
+  Radio,
+  Checkbox,
+  Slider,
+  Text,
+} from 'theme-ui'
 
 const InnerWave = styled.div`
   path {
@@ -37,6 +49,60 @@ const Contact = ({ offset, factor = 1 }: { offset: number; factor?: number }) =>
     <Content speed={0.4} offset={offset} factor={factor}>
       <Inner>
         <ContactMDX />
+        {/* <!-- Netlify Form --> */}
+        <form
+          name="contact"
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          {/* Name */}
+          <Label htmlFor='name'>Name</Label>
+          <Input type="text" name="name" placeholder="Who are you?" required mb={3} />
+          {/* Email */}
+          <Label htmlFor='email'>Email</Label>
+          <Input
+            name="email"
+            aria-describedby="email"
+            label="Email"
+            type="email"
+            placeholder="So we can contact you (we won't aadd you to any lists)."
+            required
+            mb={3}
+          />
+          {/* Phone */}
+          <Label htmlFor='phone'>Phone</Label>
+          <Input
+            name="phone"
+            aria-describedby="phone"
+            label="Phone"
+            type="text"
+            placeholder="Optional but welcomed."
+            mb={3}
+          />
+          {/* Services */}
+          <Text sx={{ fontSize: 1, fontWeight: 'bold' }}>What do you need help with?</Text>
+          <Box mb={3}>
+            <Label>
+              <Checkbox name='service-uxui' />Branding & UX/UI Design
+            </Label>
+            <Label>
+              <Checkbox name='service-web' />Web Design & Development
+            </Label>
+            <Label>
+              <Checkbox name='service-app' />App Design & Development
+            </Label>
+            <Label>
+              <Checkbox name='service-consulting' />Software Integration Consulting
+            </Label>
+          </Box>
+          {/* Message */}
+          <Label htmlFor='message'>Describe how we can help.</Label>
+          <Textarea name="message" required mb={3} />
+          {/* Submit */}
+          <input type="hidden" name="form-name" value="contact" />
+          <Button type='submit' mr={2}>Send</Button>
+        </form>
       </Inner>
       <Footer />
     </Content>
