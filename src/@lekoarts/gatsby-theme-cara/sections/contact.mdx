@@ -1,4 +1,5 @@
 import {
+  Box,
   Button,
   Label,
   Input,
@@ -7,18 +8,18 @@ import {
   Radio,
   Checkbox,
   Slider,
+  Text,
 } from 'theme-ui'
 
 <!-- Page Content -->
-## Get in Touch
+## Let's Create Together
 
-Interested in working with me on your next project? I'd love to hear from you!
+Have a project I can help with? Please drop me a line, I'd love to hear from you!
 
 <!-- Netlify Form -->
 <form
   name="contact"
   method="post"
-  action="#"
   data-netlify="true"
   data-netlify-honeypot="bot-field"
 >
@@ -38,8 +39,27 @@ Interested in working with me on your next project? I'd love to hear from you!
     required
     mb={3}
   />
+  {/* Services */}
+  <Text sx={{fontSize: 1, fontWeight: 'bold'}}>What do you need help with?</Text>
+  <Box  mb={3}>
+    <Label>
+      <Checkbox name='service-app'/>Branding & UX/UI Design
+    </Label>
+    <Label>
+      <Checkbox name='service-app'/>Web Design & Development
+    </Label>
+    <Label>
+      <Checkbox name='service-app'/>App Design & Development
+    </Label>
+    <Label>
+      <Checkbox name='service-app'/>Software Integration Consulting
+    </Label>
+  </Box>
+  
   {/* Message */}
-  <Label htmlFor='message'>Message</Label>
-  <Textarea name="message"  mb={3}/>
+  <Label htmlFor='message'>Describe how we can help.</Label>
+  <Textarea name="message" required mb={3}/>
+  
+  {/* Submit */}
   <Button mr={2}>Send</Button>
 </form>
