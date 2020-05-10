@@ -19,8 +19,8 @@ Have a project I can help with? Please drop me a line, I'd love to hear from you
 <!-- Netlify Form -->
 <form
   name="contact"
-  method="POST"
-  netlify-honeypot="bot-field"
+  method="post"
+  data-netlify-honeypot="bot-field"
   data-netlify="true"
 >
   {/* Name */}
@@ -35,6 +35,16 @@ Have a project I can help with? Please drop me a line, I'd love to hear from you
     type="email"
     placeholder="So we can contact you (we won't aadd you to any lists)."
     required
+    mb={3}
+  />
+  {/* Phone */}
+  <Label htmlFor='phone'>Phone</Label>
+  <Input
+    name="phone"
+    aria-describedby="phone"
+    label="Phone"
+    type="phone"
+    placeholder="Optional but welcomed."
     mb={3}
   />
   {/* Services */}
