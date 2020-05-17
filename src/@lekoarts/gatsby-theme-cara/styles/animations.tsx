@@ -24,10 +24,28 @@ const upDown = keyframes`
 
 const upDownWide = keyframes`
   from {
-    transform: translateY(0);
+    transform: translateX(0) translateY(0);
   }
   to {
-    transform: translateY(200px);
+    transform: translateX(100px) translateY(200px);
+  }
+`
+
+const upDownWideRight = keyframes`
+  from {
+    transform: translateX(0) translateY(0);
+  }
+  to {
+    transform: translateX(100px) translateY(200px);
+  }
+`
+
+const upDownWideLeft = keyframes`
+  from {
+    transform: translateX(0) translateY(0);
+  }
+  to {
+    transform: translateX(-100px) translateY(-200px);
   }
 `
 
@@ -38,6 +56,15 @@ const upDownAnimation = css`
 const upDownWideAnimation = css`
   ${upDownWide} 18s ease-in-out infinite alternate;
 `
+
+const upDownWideRightAnimation = css`
+  ${upDownWideRight} 18s ease-in-out infinite alternate;
+`
+
+const upDownWideLeftAnimation = css`
+  ${upDownWideLeft} 18s ease-in-out infinite alternate;
+`
+
 
 export const UpDown = styled.div`
   animation: ${upDownAnimation};
@@ -50,6 +77,24 @@ export const UpDown = styled.div`
 
 export const UpDownWide = styled.div`
   animation: ${upDownWideAnimation};
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+`
+
+export const UpDownWideRight = styled.div`
+  animation: ${upDownWideRightAnimation};
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+`
+
+export const UpDownWideLeft = styled.div`
+  animation: ${upDownWideLeftAnimation};
   position: absolute;
   top: 0;
   left: 0;
